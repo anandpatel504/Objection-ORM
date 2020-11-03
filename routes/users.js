@@ -3,7 +3,7 @@ var router = express.Router();
 const UserService = require('../services/users');
 const Services = new UserService();
 
-// welcome
+// welcome route
 router.get('/', async function(req, res, next) {
     res.send('Welcome user:)');
 });
